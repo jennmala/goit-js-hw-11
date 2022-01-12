@@ -1,6 +1,5 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import axios from 'axios';
-import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const BASE_URL = 'https://pixabay.com/api/';
 const API_KEY = '25171774-7b79c52a8837e6f3634106172';

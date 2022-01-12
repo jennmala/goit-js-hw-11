@@ -4,6 +4,7 @@ import ApiService from './js/api-service';
 import LoadMoreBtn from './js/load-more-btn';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SimpleLightbox from "simplelightbox";
+import axios from 'axios';
 
 const apiService = new ApiService();
 const loadMoreBtn = new LoadMoreBtn('.load-more-btn');
