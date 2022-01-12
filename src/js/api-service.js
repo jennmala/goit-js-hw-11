@@ -1,9 +1,6 @@
-import LoadMoreBtn from './load-more-btn';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import axios from 'axios';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-
-const loadMoreBtn = new LoadMoreBtn('.load-more-btn');
 
 const BASE_URL = 'https://pixabay.com/api/';
 const API_KEY = '25171774-7b79c52a8837e6f3634106172';
@@ -28,8 +25,8 @@ export default class ApiService {
             Notify.success(`Hooray! We found ${response.data.totalHits} images.`);
         }
 
-        if ((imgPerPage*this.page) >= response.data.totalHits) {             
-            loadMoreBtn.hide();
+        if ((imgPerPage * this.page) >= response.data.totalHits) {      
+            document.querySelector('.load-more-btn').classList.add('visually-hidden');
             Notify.info(`We're sorry, but you've reached the end of search results.`);                
         } else {
             this.page += 1;
