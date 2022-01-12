@@ -3,8 +3,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import ApiService from './js/api-service';
 import LoadMoreBtn from './js/load-more-btn';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import SimpleLightbox from "simplelightbox";
-import axios from 'axios';
+import SimpleLightbox from 'simplelightbox';
 
 const apiService = new ApiService();
 const loadMoreBtn = new LoadMoreBtn('.load-more-btn');
